@@ -3,7 +3,7 @@ import Ingredient from './Ingredient'
 
 export default class IngredientList extends Component {
     render() {
-        let ingredientComponents = this.props.ingredients.map(item => (
+        const ingredientComponents = this.props.ingredients.map(item => (
             <li>
                 <Ingredient ingredient={item.name} color={item.color}/>
             </li>
