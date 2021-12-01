@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
-import IngredientList from "./IngredientList"
-
+import IngredientList from './IngredientList'
 
 const ingredients = [
   {name: 'Kaiser Bun', color: 'saddlebrown'},
@@ -18,15 +17,12 @@ const ingredients = [
   {name: 'Onion', color: 'lightyellow'}
 ]
 
-function App() {
-  return (
-    <div className="App">
-      <h1>burger stacker?</h1>
-      <div className="IngredientMenu">
-        <ul>
-          <li>List Items will go here :)</li>
-        </ul>
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <IngredientList ingredients={ingredients}/>
       </div>
-    </div>
-  );
+    )
+  }
 }
